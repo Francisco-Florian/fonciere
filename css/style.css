@@ -26,8 +26,8 @@
     margin: auto;
 }
 
-.container_800{
-    max-width: 800px;
+.container_600{
+    max-width: 600px;
     margin: auto;
 }
 
@@ -74,8 +74,6 @@ header nav ul{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
-    gap: 60px;
-    width: 100%;
     height: 100%;
 }
 
@@ -85,6 +83,7 @@ header nav ul{
 
 header nav ul li{
     text-align: center;
+    width: 180px;
 }
 
 header nav ul a{
@@ -140,7 +139,7 @@ footer, footer a{
     margin-bottom: 20px;
 }
 
-#section1Article h2{
+#section1Article p{
     font-family: var(--montserrat);
     font-size: 18px;
     font-weight: 600;
@@ -187,7 +186,8 @@ footer, footer a{
 }
 
 #hr :nth-child(3){
-    grid-column: 1/3;
+    grid-column: 2/3;
+    margin-left: 30px;
 }
 
 #hr a{
@@ -229,12 +229,6 @@ footer, footer a{
     margin-top: 14px;
 }
 
-#hr a{
-    padding: 10px 20px;
-    background-color: var(--blue-color);
-    color: var(--white-color);
-}
-
 #hr a:hover{
     background-color: var(--white-color);
     color: var(--blue-color);
@@ -252,6 +246,13 @@ footer, footer a{
     display: grid;
     gap: 10px;
     text-align: center;
+    font-size: 16px;
+}
+
+.section2Article2 h4{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--montserrat);
 }
 
 .icon{
@@ -275,6 +276,10 @@ footer, footer a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+#section3Article1 :nth-child(1){
+    grid-column: 1/3;
 }
 
 #section3Article1 img{
@@ -352,12 +357,20 @@ footer, footer a{
     padding-bottom: 20px;
 }
 
-.section4Article a{
+.section4Article h4{
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
     color: var(--black-color);
+    text-align: center;
 }
 
-#section4Div1>div> a{
+#section4> a{
     padding: 10px 20px;
+    display: grid;
+    max-width: 200px;
+    margin: auto;
+    justify-items: center;
     background-color: var(--blue-color);
     color: var(--white-color);
 }
@@ -397,14 +410,17 @@ form :nth-child(3), :nth-child(6), :nth-child(7){
 }
 
 form> input{
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 400;
 }
 
-form p{
+form label{
     color: var(--white-color);
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 form textarea{
@@ -511,6 +527,8 @@ form button:hover{
 
     #hr a{
         text-align: center;
+        grid-column: 1/3 !important;
+        margin-left: 0 !important;
     }
 
     #section2Div{
