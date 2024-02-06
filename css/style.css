@@ -67,7 +67,8 @@ a:hover{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    align-items: center;
+    padding: 0 10px;
 }
 
 header nav ul{
@@ -83,7 +84,8 @@ header nav ul{
 
 header nav ul li{
     text-align: center;
-    width: 180px;
+    width: 200px;
+    height: 120px;
 }
 
 header nav ul a{
@@ -144,7 +146,7 @@ footer, footer a{
     font-size: 18px;
     font-weight: 600;
     color: var(--white-color);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #section1Article a{
@@ -160,6 +162,7 @@ footer, footer a{
     background-color: var(--blue-color);
     color: var(--white-color);
     border: 1px solid var(--white-color);
+    padding: 15px 25px;
 }
 
 /* section 2 */
@@ -233,6 +236,7 @@ footer, footer a{
     background-color: var(--white-color);
     color: var(--blue-color);
     border: 1px solid var(--blue-color);
+    padding: 15px 25px;
 }
 
 #section2Div{
@@ -321,6 +325,7 @@ footer, footer a{
     background-color: var(--blue-color);
     color: var(--white-color);
     border: 1px solid var(--white-color);
+    padding: 15px 25px;
 }
 
 /* section 4 */
@@ -329,18 +334,18 @@ footer, footer a{
     padding: 80px 15px;
 }
 
-#section4Div1{
+#section4{
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
 }
 
-#section4Div1 h2{
+#section4 h2{
     font-size: 20px;
     color: var(--blue-color);
 }
 
-#section4Div1 h3{
+#section4 h3{
     font-size: 30px;
 }
 
@@ -375,10 +380,11 @@ footer, footer a{
     color: var(--white-color);
 }
 
-#section4Div1>div> a:hover{
+#section4> a:hover{
     background-color: var(--white-color);
     color: var(--blue-color);
     border: 1px solid var(--blue-color);
+    padding: 15px 25px;
 }
 
 /* section 5 */
